@@ -33,8 +33,8 @@
 // ══════════════════════════════════════════════════════════
 //  ▼▼▼  CONFIGURE THESE FOR YOUR GITHUB REPOSITORY  ▼▼▼
 // ══════════════════════════════════════════════════════════
-const GITHUB_OWNER  = 'YOUR_GITHUB_USERNAME';  // e.g. 'john-doe'
-const GITHUB_REPO   = 'YOUR_REPO_NAME';        // e.g. 'mi-partner-site'
+const GITHUB_OWNER  = 'HimanshuGupta08 ';  // e.g. 'john-doe'
+const GITHUB_REPO   = 'Wellify';        // e.g. 'mi-partner-site'
 const GITHUB_BRANCH = 'main';                  // or 'master'
 const IMAGES_DIR    = 'images/products';       // folder inside your repo
 // ══════════════════════════════════════════════════════════
