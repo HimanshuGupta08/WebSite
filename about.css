@@ -1,0 +1,138 @@
+/* ── ABOUT PAGE ─────────────────────────── */
+
+/* INTRO */
+.about-intro-section { background: var(--dark); }
+.about-intro-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 72px; align-items: center;
+}
+.about-para {
+  color: var(--text-muted); font-size: 0.97rem;
+  font-weight: 300; margin-bottom: 18px; line-height: 1.85;
+}
+.about-intro-badges {
+  display: flex; gap: 16px; margin-top: 36px; flex-wrap: wrap;
+}
+.intro-badge {
+  border: 1px solid var(--border); padding: 14px 20px; text-align: center;
+  flex: 1; min-width: 100px;
+}
+.intro-badge strong { display: block; color: var(--gold); font-size: 0.9rem; margin-bottom: 4px; }
+.intro-badge span { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); }
+
+.about-quote-card {
+  background: linear-gradient(135deg, #1a1206, #2a1d0a);
+  border: 1px solid var(--border);
+  padding: 48px 40px; position: relative;
+}
+.about-quote-mark {
+  font-family: 'Playfair Display', serif;
+  font-size: 8rem; color: var(--gold); line-height: 0.7;
+  margin-bottom: 20px; opacity: 0.5;
+}
+.about-quote-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem; font-style: italic;
+  line-height: 1.7; color: var(--text-main);
+  margin-bottom: 20px;
+}
+.about-quote-source {
+  font-size: 0.78rem; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* MI INFO */
+.mi-info-section { background: var(--dark-mid); }
+.mi-info-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1px; background: var(--border);
+  border: 1px solid var(--border);
+  margin-top: 12px;
+}
+.mi-info-card {
+  background: var(--dark-card); padding: 36px 28px;
+  border: none; border-radius: 0;
+}
+.mi-info-icon { font-size: 2rem; margin-bottom: 16px; }
+.mi-info-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem; font-weight: 600;
+  margin-bottom: 10px; color: var(--gold-light);
+}
+.mi-info-card p { color: var(--text-muted); font-size: 0.88rem; font-weight: 300; line-height: 1.8; }
+
+/* VALUES */
+.values-section {
+  background: var(--dark);
+  border-top: 1px solid var(--border);
+}
+.values-inner { max-width: 860px; }
+.values-list { margin-top: 48px; }
+.value-item {
+  display: flex; gap: 32px; align-items: flex-start;
+  padding: 32px 0; border-bottom: 1px solid var(--border);
+}
+.value-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem; font-weight: 900; color: var(--border);
+  line-height: 1; flex-shrink: 0; width: 56px;
+}
+.value-item h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem; font-weight: 600; color: var(--gold-light);
+  margin-bottom: 8px;
+}
+.value-item p { color: var(--text-muted); font-size: 0.92rem; font-weight: 300; }
+
+/* BRANDS */
+.brands-section { background: var(--dark-mid); }
+.brands-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 16px; margin-top: 12px;
+}
+.brand-card {
+  background: var(--dark-card); border: 1px solid var(--border);
+  padding: 36px 28px;
+  transition: border-color 0.3s, transform 0.3s;
+}
+.brand-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+.brand-initial {
+  width: 52px; height: 52px;
+  background: linear-gradient(135deg, rgba(201,151,58,0.2), rgba(201,151,58,0.05));
+  border: 1px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem; font-weight: 900; color: var(--gold);
+  margin-bottom: 20px;
+}
+.brand-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem; font-weight: 600; margin-bottom: 8px;
+}
+.brand-card p { color: var(--text-muted); font-size: 0.85rem; font-weight: 300; }
+
+/* CTA BAND */
+.cta-band-about {
+  background: linear-gradient(135deg, #1a1206, #2a1d0a, #1a1206);
+  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  padding: 80px 8vw; text-align: center;
+}
+.cta-band-about .cta-band-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900;
+  margin-bottom: 16px;
+}
+.cta-band-about .cta-band-content h2 em { font-style: italic; color: var(--gold-light); }
+.cta-band-about .cta-band-content p { color: var(--text-muted); font-size: 1rem; margin-bottom: 36px; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-intro-grid { grid-template-columns: 1fr; }
+  .mi-info-grid { grid-template-columns: repeat(2, 1fr); }
+  .brands-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .mi-info-grid { grid-template-columns: 1fr; }
+  .brands-grid { grid-template-columns: 1fr; }
+  .value-item { gap: 20px; }
+}

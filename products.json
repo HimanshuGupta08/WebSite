@@ -1,0 +1,21 @@
+[
+  { "file": "personal-herbal-shampoo.jpg",     "name": "Herbal Shampoo",         "category": "personal"  },
+  { "file": "personal-night-repair-cream.jpg",  "name": "Night Repair Cream",     "category": "personal"  },
+  { "file": "personal-body-butter.jpg",          "name": "Body Butter Cream",      "category": "personal"  },
+  { "file": "personal-facewash.jpg",             "name": "Natural Face Wash",      "category": "personal"  },
+  { "file": "health-herbal-supplement.jpg",      "name": "Herbal Supplement",      "category": "health"    },
+  { "file": "health-vita-capsules.jpg",           "name": "Vita Capsules",          "category": "health"    },
+  { "file": "health-immunity-booster.jpg",        "name": "Immunity Booster",       "category": "health"    },
+  { "file": "body-lotion.jpg",                    "name": "Nourishing Body Lotion", "category": "body"      },
+  { "file": "body-vital-supplement.jpg",          "name": "Vital Supplement",       "category": "body"      },
+  { "file": "body-cream.jpg",                     "name": "Moisturising Cream",     "category": "body"      },
+  { "file": "agro-crop-enhancer.jpg",             "name": "Organic Crop Enhancer",  "category": "agro"      },
+  { "file": "agro-soil-health.jpg",               "name": "Soil Health Solution",   "category": "agro"      },
+  { "file": "agro-pest-control.jpg",              "name": "Organic Pest Control",   "category": "agro"      },
+  { "file": "home-floor-cleaner.jpg",             "name": "Floor Cleaner",          "category": "home"      },
+  { "file": "home-dishwash-liquid.jpg",           "name": "Dishwashing Liquid",     "category": "home"      },
+  { "file": "home-laundry-detergent.jpg",         "name": "Liquid Laundry Detergent","category": "home"     },
+  { "file": "nutrition-protein-powder.jpg",       "name": "Protein Powder",         "category": "nutrition" },
+  { "file": "nutrition-vitamins.jpg",             "name": "Daily Vitamins",         "category": "nutrition" },
+  { "file": "nutrition-herbal-mix.jpg",           "name": "Herbal Mix",             "category": "nutrition" }
+]
