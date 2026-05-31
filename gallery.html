@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products Gallery — Mi Lifestyle Partner</title>
+  <meta name="description" content="Browse our complete Mi Lifestyle product catalogue including Personal Care, Health Care, Body Care, Nutrition, Agro Care and Home Care products." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-icon">M</div>
+    <div class="nav-logo-text">Mi Partner<span>Authorised Distributor</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="gallery.html" class="active">Products</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <span class="mobile-close" id="mobileClose">✕</span>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Products</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-lines"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-label">Our Catalogue</p>
+    <h1 class="page-hero-title">Products <em>Gallery</em></h1>
+  </div>
+</div>
+
+<!-- ══ GALLERY SECTION ════════════════════════════════════════ -->
+<section class="section gallery-section">
+
+  <!-- FILTER BAR -->
+  <div class="gallery-top reveal">
+    <div>
+      <div class="gold-divider"></div>
+      <p class="section-label">Browse & Discover</p>
+      <h2 class="section-title">Mi Lifestyle <em>Product Range</em></h2>
+    </div>
+    <p class="gallery-note">Images load from the <code>images/products/</code> folder in your GitHub repository.</p>
+  </div>
+
+  <div class="filter-bar reveal">
+    <button class="filter-btn active" data-filter="all">All Products</button>
+    <button class="filter-btn" data-filter="personal">Personal Care</button>
+    <button class="filter-btn" data-filter="health">Health Care</button>
+    <button class="filter-btn" data-filter="body">Body Care</button>
+    <button class="filter-btn" data-filter="agro">Agro Care</button>
+    <button class="filter-btn" data-filter="home">Home Care</button>
+    <button class="filter-btn" data-filter="nutrition">Nutrition</button>
+  </div>
+
+  <!-- SEARCH -->
+  <div class="gallery-search reveal">
+    <input type="text" id="searchInput" placeholder="Search products by name…" class="search-input" />
+  </div>
+
+  <!-- STATS BAR -->
+  <div class="gallery-stats reveal">
+    <span id="totalCount" class="gallery-count">Loading products…</span>
+  </div>
+
+  <!-- PRODUCT GRID -->
+  <div class="product-grid" id="productGrid">
+    <!-- Cards are injected by JS -->
+  </div>
+
+  <!-- EMPTY STATE -->
+  <div class="empty-state" id="emptyState" style="display:none;">
+    <div class="empty-icon">🔍</div>
+    <h3>No products found</h3>
+    <p>Try adjusting your filter or search term.</p>
+  </div>
+
+  <!-- LOADING STATE -->
+  <div class="loading-state" id="loadingState">
+    <div class="loader"></div>
+    <p>Loading products…</p>
+  </div>
+
+</section>
+
+<!-- CONTACT CTA -->
+<section class="gallery-cta-band reveal">
+  <p>Looking for a specific product or want to order in bulk?</p>
+  <a href="contact.html" class="btn btn-gold">Get in Touch ↗</a>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-overlay" id="lightboxOverlay"></div>
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev">‹</button>
+    <div class="lightbox-img-wrap">
+      <img id="lightboxImg" src="" alt="" />
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext">›</button>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-logo-area">
+      <a class="nav-logo" href="index.html">
+        <div class="nav-logo-icon">M</div>
+        <div class="nav-logo-text">Mi Partner<span>Authorised Distributor</span></div>
+      </a>
+      <p class="footer-tagline">Your authorised Mi Lifestyle Marketing distributor — bringing premium daily-use products and business opportunity to your community.</p>
+      <div class="footer-social">
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="Instagram">in</a>
+        <a href="#" title="WhatsApp">W</a>
+        <a href="#" title="YouTube">▶</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Navigation</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Products Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Categories</p>
+      <ul>
+        <li><a href="gallery.html">Personal Care</a></li>
+        <li><a href="gallery.html">Health Care</a></li>
+        <li><a href="gallery.html">Body Care</a></li>
+        <li><a href="gallery.html">Agro Care</a></li>
+        <li><a href="gallery.html">Home Care</a></li>
+        <li><a href="gallery.html">Nutrition</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Contact</p>
+      <div class="footer-contact-item">
+        <span class="ico">📍</span>
+        <p>Your City, Your State, India</p>
+      </div>
+      <div class="footer-contact-item">
+        <span class="ico">📞</span>
+        <p>+91 XXXXX XXXXX</p>
+      </div>
+      <div class="footer-contact-item">
+        <span class="ico">✉️</span>
+        <p>your@email.com</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Mi Lifestyle Partner. Authorised Distributor of <a href="https://www.milifestylemarketing.com" target="_blank">Mi Lifestyle Marketing Global Pvt. Ltd.</a></p>
+    <p>All product trademarks belong to their respective owners.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Mi Lifestyle Partner</title>
+  <meta name="description" content="Get in touch with our Mi Lifestyle authorised distributor team to enquire about products, pricing, or becoming a distributor yourself." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-icon">M</div>
+    <div class="nav-logo-text">Mi Partner<span>Authorised Distributor</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="gallery.html">Products</a></li>
+    <li><a href="contact.html" class="nav-cta active">Contact Us</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <span class="mobile-close" id="mobileClose">✕</span>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Products</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-lines"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-label">Reach Out</p>
+    <h1 class="page-hero-title">Let's <em>Connect</em></h1>
+  </div>
+</div>
+
+<!-- ══ CONTACT SECTION ════════════════════════════════════════ -->
+<section class="section contact-section">
+  <div class="contact-grid">
+
+    <!-- LEFT: Info -->
+    <div class="contact-info reveal">
+      <div class="gold-divider"></div>
+      <p class="section-label">Get in Touch</p>
+      <h2 class="section-title">We're Here <em>to Help</em></h2>
+      <p class="contact-desc">Whether you want to enquire about a product, place a bulk order, or become a Mi Lifestyle distributor yourself — our team is ready to assist you.</p>
+
+      <div class="contact-info-blocks">
+        <div class="contact-info-block reveal reveal-delay-1">
+          <div class="cib-icon">📍</div>
+          <div>
+            <h4>Our Location</h4>
+            <p>Your Address Line 1<br/>City, State — PIN Code<br/>India</p>
+          </div>
+        </div>
+        <div class="contact-info-block reveal reveal-delay-2">
+          <div class="cib-icon">📞</div>
+          <div>
+            <h4>Phone / WhatsApp</h4>
+            <p>+91 XXXXX XXXXX</p>
+            <a href="https://wa.me/91XXXXXXXXXX" class="cib-link" target="_blank">Open in WhatsApp →</a>
+          </div>
+        </div>
+        <div class="contact-info-block reveal reveal-delay-3">
+          <div class="cib-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <p>your@email.com</p>
+            <a href="mailto:your@email.com" class="cib-link">Send Email →</a>
+          </div>
+        </div>
+        <div class="contact-info-block reveal reveal-delay-4">
+          <div class="cib-icon">🕐</div>
+          <div>
+            <h4>Business Hours</h4>
+            <p>Mon – Sat: 9:00 AM – 7:00 PM<br/>Sunday: 10:00 AM – 4:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-social reveal">
+        <p class="contact-social-label">Follow Us</p>
+        <div class="footer-social">
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="Instagram">in</a>
+          <a href="#" title="WhatsApp">W</a>
+          <a href="#" title="YouTube">▶</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div class="contact-form-wrap reveal reveal-delay-2">
+      <div class="contact-form-card">
+        <h3 class="form-title">Send Us a Message</h3>
+        <p class="form-sub">Fill in your details and we'll get back to you within 24 hours.</p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name <span class="req">*</span></label>
+              <input type="text" id="firstName" name="firstName" placeholder="Your first name" required />
+              <span class="form-error" id="firstNameErr">Please enter your first name.</span>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Your last name" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp <span class="req">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+            <span class="form-error" id="phoneErr">Please enter a valid phone number.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">I'm Interested In <span class="req">*</span></label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a topic…</option>
+              <option value="product-enquiry">Product Enquiry / Order</option>
+              <option value="become-distributor">Become a Distributor</option>
+              <option value="bulk-order">Bulk / Wholesale Order</option>
+              <option value="pricing">Pricing Information</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="form-error" id="subjectErr">Please select a topic.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span class="req">*</span></label>
+            <textarea id="message" name="message" placeholder="Tell us more about what you need…" rows="5" required></textarea>
+            <span class="form-error" id="messageErr">Please write a message.</span>
+          </div>
+
+          <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;" id="submitBtn">
+            Send Message ✉
+          </button>
+
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <div class="success-icon">✓</div>
+            <h4>Message Sent!</h4>
+            <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ WHY CONTACT US ════════════════════════════════════════ -->
+<section class="section contact-reasons-section">
+  <div class="reveal">
+    <div class="gold-divider"></div>
+    <p class="section-label">What We Can Help With</p>
+    <h2 class="section-title">Reasons to <em>Reach Out</em></h2>
+  </div>
+
+  <div class="reasons-grid">
+    <div class="reason-card card reveal reveal-delay-1">
+      <div class="reason-icon">📦</div>
+      <h3>Product Orders</h3>
+      <p>Order any Mi Lifestyle product at our distributor pricing. Home delivery available in our area.</p>
+    </div>
+    <div class="reason-card card reveal reveal-delay-2">
+      <div class="reason-icon">🤝</div>
+      <h3>Join as a Distributor</h3>
+      <p>Interested in earning extra income? We'll guide you through the simple registration process.</p>
+    </div>
+    <div class="reason-card card reveal reveal-delay-3">
+      <div class="reason-icon">📊</div>
+      <h3>Bulk & Wholesale</h3>
+      <p>Planning a large order for your group or business? We offer special bulk pricing and support.</p>
+    </div>
+    <div class="reason-card card reveal reveal-delay-1">
+      <div class="reason-icon">🎓</div>
+      <h3>Training & Guidance</h3>
+      <p>New to direct selling? We provide onboarding support and product training for all our distributors.</p>
+    </div>
+    <div class="reason-card card reveal reveal-delay-2">
+      <div class="reason-icon">❓</div>
+      <h3>Product Questions</h3>
+      <p>Want to know more about ingredients, usage or benefits of any Mi Lifestyle product? Just ask.</p>
+    </div>
+    <div class="reason-card card reveal reveal-delay-3">
+      <div class="reason-icon">📱</div>
+      <h3>App & Account Help</h3>
+      <p>Need help with the Mi Lifestyle app or your distributor account? We're happy to assist.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-logo-area">
+      <a class="nav-logo" href="index.html">
+        <div class="nav-logo-icon">M</div>
+        <div class="nav-logo-text">Mi Partner<span>Authorised Distributor</span></div>
+      </a>
+      <p class="footer-tagline">Your authorised Mi Lifestyle Marketing distributor — bringing premium daily-use products and business opportunity to your community.</p>
+      <div class="footer-social">
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="Instagram">in</a>
+        <a href="#" title="WhatsApp">W</a>
+        <a href="#" title="YouTube">▶</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Navigation</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Products Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Categories</p>
+      <ul>
+        <li><a href="gallery.html">Personal Care</a></li>
+        <li><a href="gallery.html">Health Care</a></li>
+        <li><a href="gallery.html">Body Care</a></li>
+        <li><a href="gallery.html">Agro Care</a></li>
+        <li><a href="gallery.html">Home Care</a></li>
+        <li><a href="gallery.html">Nutrition</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Contact</p>
+      <div class="footer-contact-item">
+        <span class="ico">📍</span>
+        <p>Your City, Your State, India</p>
+      </div>
+      <div class="footer-contact-item">
+        <span class="ico">📞</span>
+        <p>+91 XXXXX XXXXX</p>
+      </div>
+      <div class="footer-contact-item">
+        <span class="ico">✉️</span>
+        <p>your@email.com</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Mi Lifestyle Partner. Authorised Distributor of <a href="https://www.milifestylemarketing.com" target="_blank">Mi Lifestyle Marketing Global Pvt. Ltd.</a></p>
+    <p>All product trademarks belong to their respective owners.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>
