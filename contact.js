@@ -50,7 +50,7 @@ form.addEventListener('submit', (e) => {
   // ── OPTION A: Formspree (recommended for static sites)
   // Replace YOUR_FORM_ID with your Formspree endpoint
   // https://formspree.io — free tier: 50 submissions/month
-  const FORMSPREE_ID = 'YOUR_FORM_ID'; // e.g. 'xaybcdeg'
+  const FORMSPREE_ID = 'xykvalew'; // e.g. 'xaybcdeg'
 
   if (FORMSPREE_ID !== 'YOUR_FORM_ID') {
     const data = new FormData(form);
